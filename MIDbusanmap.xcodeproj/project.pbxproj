@@ -14,6 +14,10 @@
 		8BC6590B1F91B90B00382F82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC659091F91B90B00382F82 /* LaunchScreen.storyboard */; };
 		8BC659161F91B90B00382F82 /* MIDbusanmapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC659151F91B90B00382F82 /* MIDbusanmapTests.swift */; };
 		8BC659211F91B90B00382F82 /* MIDbusanmapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC659201F91B90B00382F82 /* MIDbusanmapUITests.swift */; };
+		8BC659301F91B92400382F82 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC6592F1F91B92400382F82 /* MapKit.framework */; };
+		8BC659361F91BA1900382F82 /* p.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BC659331F91BA1900382F82 /* p.plist */; };
+		8BC659381F91BB5400382F82 /* onemap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC659371F91BB5400382F82 /* onemap.swift */; };
+		8BC6593A1F91BC1200382F82 /* allmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC659391F91BC1200382F82 /* allmap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		8BC6591C1F91B90B00382F82 /* MIDbusanmapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIDbusanmapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC659201F91B90B00382F82 /* MIDbusanmapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDbusanmapUITests.swift; sourceTree = "<group>"; };
 		8BC659221F91B90B00382F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC6592F1F91B92400382F82 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8BC659331F91BA1900382F82 /* p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = p.plist; sourceTree = "<group>"; };
+		8BC659371F91BB5400382F82 /* onemap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onemap.swift; sourceTree = "<group>"; };
+		8BC659391F91BC1200382F82 /* allmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allmap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC659301F91B92400382F82 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 				8BC659141F91B90B00382F82 /* MIDbusanmapTests */,
 				8BC6591F1F91B90B00382F82 /* MIDbusanmapUITests */,
 				8BC658FE1F91B90A00382F82 /* Products */,
+				8BC6592E1F91B92300382F82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +112,10 @@
 				8BC659041F91B90B00382F82 /* Main.storyboard */,
 				8BC659071F91B90B00382F82 /* Assets.xcassets */,
 				8BC659091F91B90B00382F82 /* LaunchScreen.storyboard */,
+				8BC659331F91BA1900382F82 /* p.plist */,
 				8BC6590C1F91B90B00382F82 /* Info.plist */,
+				8BC659371F91BB5400382F82 /* onemap.swift */,
+				8BC659391F91BC1200382F82 /* allmap.swift */,
 			);
 			path = MIDbusanmap;
 			sourceTree = "<group>";
@@ -123,6 +136,14 @@
 				8BC659221F91B90B00382F82 /* Info.plist */,
 			);
 			path = MIDbusanmapUITests;
+			sourceTree = "<group>";
+		};
+		8BC6592E1F91B92300382F82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BC6592F1F91B92400382F82 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC659361F91BA1900382F82 /* p.plist in Resources */,
 				8BC6590B1F91B90B00382F82 /* LaunchScreen.storyboard in Resources */,
 				8BC659081F91B90B00382F82 /* Assets.xcassets in Resources */,
 				8BC659061F91B90B00382F82 /* Main.storyboard in Resources */,
@@ -259,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC659381F91BB5400382F82 /* onemap.swift in Sources */,
 				8BC659031F91B90B00382F82 /* ViewController.swift in Sources */,
+				8BC6593A1F91BC1200382F82 /* allmap.swift in Sources */,
 				8BC659011F91B90A00382F82 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +527,7 @@
 				8BC659271F91B90B00382F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BC659281F91B90B00382F82 /* Build configuration list for PBXNativeTarget "MIDbusanmapTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +536,7 @@
 				8BC6592A1F91B90B00382F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BC6592B1F91B90B00382F82 /* Build configuration list for PBXNativeTarget "MIDbusanmapUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +545,7 @@
 				8BC6592D1F91B90B00382F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
